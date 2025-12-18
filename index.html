@@ -26,6 +26,8 @@
         .step-number { background: #0a84ff; color: #fff; width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 0.875rem; flex-shrink: 0; }
         .step-content { color: #ccc; line-height: 1.5; padding-top: 0.2rem; }
         .step-content strong { color: #fff; }
+        .step-content a { color: #0a84ff; text-decoration: none; }
+        .step-content a:hover { text-decoration: underline; }
 
         /* Diagram */
         .diagram { margin-bottom: 3rem; padding: 2rem 1rem; }
@@ -90,19 +92,19 @@
             <div class="quickstart-steps">
                 <div class="quickstart-step">
                     <span class="step-number">1</span>
-                    <div class="step-content"><strong>Install the iOS app</strong> from the App Store on your iPhone or iPad</div>
+                    <div class="step-content"><strong><a href="https://apps.apple.com/app/id6756228220">Install the iOS app</a></strong> from the App Store</div>
                 </div>
                 <div class="quickstart-step">
                     <span class="step-number">2</span>
-                    <div class="step-content"><strong>Install the Photoshop plugin</strong> and load it in Photoshop</div>
+                    <div class="step-content"><strong><a href="https://github.com/hex/mirror-for-photoshop-plugin/releases/latest">Install the Photoshop plugin</a></strong> and load it in Photoshop</div>
                 </div>
                 <div class="quickstart-step">
                     <span class="step-number">3</span>
-                    <div class="step-content"><strong>Install and run the server</strong> on your Mac or PC (same network as your device)</div>
+                    <div class="step-content"><strong><a href="#install-server">Install and run the server</a></strong> on your Mac or PC (same network)</div>
                 </div>
                 <div class="quickstart-step">
                     <span class="step-number">4</span>
-                    <div class="step-content"><strong>Connect</strong> from Photoshop and your design appears on your device instantly</div>
+                    <div class="step-content"><strong>Connect</strong> from Photoshop and your design appears on your device</div>
                 </div>
             </div>
         </div>
@@ -132,7 +134,7 @@
             </div>
         </section>
 
-        <section class="install-section">
+        <section id="install-server" class="install-section">
             <h2><span class="section-number">3</span>Install the Server</h2>
 
             <div class="platform">
