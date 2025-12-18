@@ -15,9 +15,8 @@
         .app-store-badge img { height: 54px; }
         .app-store-badge:hover { opacity: 0.85; }
         .links { display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap; align-items: center; margin-bottom: 4rem; }
-        .links a { color: #0a84ff; text-decoration: none; }
-        .links a:hover { text-decoration: underline; }
-        .links .sep { width: 1px; height: 1rem; background: linear-gradient(to bottom, transparent, #444, transparent); }
+        .links a { color: #0a84ff; text-decoration: none; border: 2px solid #0a84ff; border-radius: 12px; padding: 0.875rem 1.5rem; font-size: 1rem; font-weight: 500; transition: background 0.2s, color 0.2s; }
+        .links a:hover { background: #0a84ff; color: #fff; }
 
         /* Install section */
         .install-section { width: 100%; text-align: left; margin-bottom: 3rem; }
@@ -36,7 +35,10 @@
         .note a:hover { text-decoration: underline; }
 
         /* Footer */
-        footer { margin-top: auto; padding-top: 2rem; font-size: 0.875rem; color: #1a3a5c; }
+        footer { margin-top: auto; padding-top: 2rem; font-size: 0.875rem; color: #555; text-align: center; }
+        footer a { color: #555; text-decoration: none; }
+        footer a:hover { color: #888; }
+        footer .sep { margin: 0 0.75rem; }
     </style>
 </head>
 <body>
@@ -50,10 +52,6 @@
         </a>
         <div class="links">
             <a href="https://github.com/hex/mirror-for-photoshop-plugin/releases/latest">Photoshop Plugin</a>
-            <span class="sep"></span>
-            <a href="/support">Support</a>
-            <span class="sep"></span>
-            <a href="/privacy">Privacy</a>
         </div>
 
         <section class="install-section">
@@ -90,6 +88,12 @@
         </section>
     </div>
 
-    <footer>&copy; 2025 hexul</footer>
+    <footer>
+        <a href="/support">Support</a>
+        <span class="sep">&middot;</span>
+        <a href="/privacy">Privacy</a>
+        <span class="sep">&middot;</span>
+        &copy; 2025 hexul
+    </footer>
 </body>
 </html>
